@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +14,6 @@ import uz.myproject.chill.pageobjects.HomePage;
 import uz.myproject.chill.pageobjects.OrderPage;
 import uz.myproject.chill.pageobjects.SuccessOrderWindow;
 
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 @RunWith(Parameterized.class)

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class SuccessOrderWindow {
     private final WebDriver driver;
-    private SuccessOrderWindow successOrderWindow;
 
     public SuccessOrderWindow(WebDriver driver) {
         this.driver = driver;
