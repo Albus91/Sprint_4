@@ -57,7 +57,7 @@ public class HomePage {
         WebElement element = new WebDriverWait(driver, 2)
                 .until(ExpectedConditions.elementToBeClickable(questionLocator));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
-        new WebDriverWait(driver, 2)
+        new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.elementToBeClickable(element));
         element.click();
     }
@@ -92,6 +92,7 @@ public class HomePage {
 
     // Клик на заказать снизу
     public void clickOrderBottomButton() {
+        closeCookieBanner();
         wait.until(ExpectedConditions.elementToBeClickable(bottomOrderButton)).click();
     }
 }
